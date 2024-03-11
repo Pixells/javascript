@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>NACIONALIDADE</h1>
+    <p>Escreva em que país você mora</p>
+    <input type="text" name="tpais" id="itpais">
+    <input type="button" value="Verificar" onclick="enter()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function enter() {
+            var pres = window.document.querySelector('input#itpais').value;
+            var res = window.document.querySelector('div#res')
+
+            if (pres.toLowerCase() === 'brasil') {
+                res.innerHTML = `<p>Você é <strong>Brasileiro</strong>!</p>`
+            }
+            else {
+                res.innerHTML = `<p>Você é <strong>Estrangeiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
