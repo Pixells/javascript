@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+background-color: lightseagreen;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.205);
+}
+
+section > div > p > label {
+    display: inline-block;
+    width: 55px; /* Define uma largura para os rótulos */
+    text-align: left; /* Alinha os rótulos à direita */
+}
+
+section > div > p > input {
+    width: 150px; /* Define uma largura fixa para os campos de entrada */
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
